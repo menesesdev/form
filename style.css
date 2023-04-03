@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body, input, button, select, textarea{
+    font-family: 'Poppins', sans-serif;
+}
+
 .page {
     width: 736px;
     margin: auto;
@@ -14,6 +25,8 @@ header h1 {
     font-size: 36px;
     line-height: 42px;
     color: white;
+
+    margin-bottom: 24px;
 }
 
 header p {
@@ -42,9 +55,61 @@ body::before {
     background: #121214;
 }
 
-form{
+form {
     background: #fafafc;
     margin-top: 38px;
     min-height: 300px;
     border-radius: 8px;
-} 
+    width: 100%;
+    
+
+    padding: 64px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset legend {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+
+    width: 100%;
+    border-bottom: 1px solid #e6e6f0;
+    padding-bottom: 16px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #4e4958;
+
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.input-wrapper label span {
+    margin-right: 12px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #c1bccc;
+}
+
+.input-wrapper input {
+    background: #fafafc;
+    border: 1px solid #e6e6f0;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    height: 56px;
+    padding: 0 24px;
+}
