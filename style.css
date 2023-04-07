@@ -5,7 +5,10 @@
     box-sizing: border-box;
 }
 
-body, input, button, select, textarea{
+body,
+input,
+select,
+textarea {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -113,7 +116,7 @@ fieldset legend {
 
 .input-wrapper input,
 .input-wrapper textarea,
-.input-wrapper select{
+.input-wrapper select {
     background: #fafafc;
     border: 1px solid #e6e6f0;
     box-sizing: border-box;
@@ -133,10 +136,41 @@ fieldset legend {
     -webkit-appearance: none;
 }
 
-.col-3{
+.col-3 {
     gap: 20px;
     display: flex;
 }
-.col-3 > div:nth-child(1){
+
+.col-3>div:nth-child(1) {
     width: 100%;
+}
+
+footer {
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 64px;
+    margin-bottom: 100px;
+}
+
+footer .button {
+    height: 56px;
+    background: #04d361;
+    border-radius: 8px;
+    font-family: 'Archivo';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    border: 0;
+}
+
+footer .button:hover {
+    background: #036b32;
+
+}
+
+input:invalid{
+    border: solid 2px red;
 }
